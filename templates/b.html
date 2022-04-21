@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+
+    {% endblock %}解忧杂货铺</title>
+    <link rel="stylesheet" href="{{ url_for("static",filename = 'css/b.css') }}">
+{% block head %}
+
+{% endblock %}
+</head>
+<body>
+<div class="b-top">
+<ul>
+
+       <a href="{{ url_for('index')}}">
+          <img class="logo" src="{{ url_for("static",filename='images/jieyoulogo.png') }}" alt=""></a>
+
+
+    <li>
+        <a href="{{ url_for('question') }}">给我写信</a>
+    </li>
+
+   <form class="navbar-form navbar-left"  action="{{ url_for('search') }}" method="get">
+        <div class="form-group">
+<li>
+          <input name="q" type="text" class="form-control" placeholder="请输入关键字"> </li>
+        </div>
+
+     <li>   <button type="submit" class="btn btn-default" >查找信件</button> </li>
+      </form>
+
+          {% if user %}
+              <li><a href="#">{{ user.username }}</a></li>
+          <li><a href="{{ url_for('logout') }}">注销</a></li>
+          {% else %}
+          <li><a href="{{ url_for('login') }}">登录</a></li>
+          <li><a href="{{ url_for('regist') }}">注册</a></li>
+          {% endif %}
+
+
+      </ul>
+</div>
+
+</body>
+</html>

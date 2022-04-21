@@ -1,0 +1,57 @@
+.b-top{
+    height: 60px;
+margin: 0 auto;
+    background: red;
+}
+img{
+    float: left;
+    margin: 0 auto;
+    margin-left: 200px;
+}
+.container{
+margin: 0 auto;
+}
+
+ul li{
+
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+.logo{
+    height: 45px;
+    padding-top: 10px;
+}
+body{
+
+    background: #f9e8d6;
+     background-image: url('backg.png');
+    opacity: 0.9;
+
+background-size:960px 774px;
+background-repeat:no-repeat;
+    background-position: 70%;
+
+
+}
+.main{
+    background: #ffffff;
+    background-image: url('pen.png');
+
+    background-size:730px 100%;
+    background-repeat:no-repeat;
+background-position: center center;
+    width: 730px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+}
+.page-title{
+    text-align: center;
+}
+li a {
+
+text-decoration: none;
+
+}
